@@ -1,38 +1,117 @@
-.App {
+.container {
+  width: 60%;
+  margin: 0 auto;
   text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container .logo img {
+  width: 272px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-icon {
+  position: relative;
+  width: 522px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-icon input {
+  width: 100%;
+  border: 0.5px solid #dfe1e5;
+  padding: 15px 10px 15px 40px;
+  border-radius: 50px;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.search-icon .search {
+  position: absolute;
+  top: 0;
+  top: 0;
+  left: 0;
+  transform: translate(15px, 15px);
+  color: #9aa0a6;
+}
+.search-icon .microphone {
+  position: absolute;
+  top: 0;
+  top: 0;
+  right: 0;
+  transform: translate(30px, 15px);
+  color: #9aa0a6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-group {
+  margin: 30px auto;
+}
+
+.button-group button {
+  border: none;
+  background: #f1f1f1;
+  color: #5f6367;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.languages-list {
+  list-style: none;
+}
+
+.languages-list li {
+  display: inline-block;
+}
+
+.languages-list li a {
+  padding: 4px;
+  font-size: small;
+  text-decoration: none;
+}
+.languages-list li a:hover {
+  text-decoration: underline;
+}
+
+.languages-list li:first-child a {
+  color: #222222;
+  margin-right: 5px;
+  cursor: default;
+}
+
+.languages-list li:first-child a {
+  color: #222222;
+  margin-right: 5px;
+  cursor: default;
+}
+
+.languages-list li:first-child a:hover {
+  text-decoration: none;
+}
+
+.search-list-container {
+  position: absolute;
+  width: 110%;
+  background: white;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 5px #dadada;
+}
+
+.search-list-group {
+  list-style: none;
+}
+
+ul.search-list-group li {
+  text-align: left;
+  padding: 8px 5px;
+}
+
+ul.search-list-group li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 8px 5px;
 }
