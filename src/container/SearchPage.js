@@ -35,7 +35,7 @@ export default function SearchPage() {
            <Input 
             onFocus={showSearcList} 
             onBlur={hideSearcList} 
-            styles={{border: showSearch && 'none'}}
+            styles={{borderColor: showSearch && 'white'}}
             />
             <div className="search">
              <FontAwesomeIcon icon={faSearch} />
