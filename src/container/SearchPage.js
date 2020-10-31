@@ -16,34 +16,49 @@ export default function SearchPage() {
     results: ["Videos", "HD WallPapers", "News", "Cool Photos", "Nature Songs", "when is new movie get released"]
   })
 
+  const [showSearch, setShowSearch] = useState(false)
+
+  const showSearcList = () =>{
+    setShowSearch(true)
+  }
+
+  const hideSearcList = () =>{
+    setShowSearch(false)
+  }
+   
 
   return (
     <div className="container">
         <Logo link={state.logo.link} alt={state.logo.link}/>
         <div className="search">
           <div className="search-icon">
-           <Input />
+           <Input 
+            onFocus={showSearcList} 
+            onBlur={hideSearcList} 
+            />
             <div className="search">
              <FontAwesomeIcon icon={faSearch} />
             </div>
             <div className="microphone">
              <FontAwesomeIcon icon={faMicrophone} />
             </div>
-
-            <div className="search-list-container">
-            <ul className="search-list-group">
-              <Li value="TRY SEARCHING FOR" />
-              {
-                state.results.map((value, index)=>{
-                  return <Li value={value} index={index} icon />
-                })
-              }
-            </ul>
-            <div className="button-group">
-              <Button name="Google Search" />
-              <Button name="I'm Feeling lucky" />
+            {showSearch && (
+              <div className="search-list-container">
+              <ul className="search-list-group">
+                <Li value="TRY SEARCHING FOR" />
+                {
+                  state.results.map((value, index)=>{
+                    return <Li value={value} index={index} icon />
+                  })
+                }
+              </ul>
+              <div className="button-group">
+                <Button name="Google Search" />
+                <Button name="I'm Feeling lucky" />
+              </div>
             </div>
-          </div>
+            )}
+            
 
           </div>
 
