@@ -16,6 +16,7 @@ export default function SearchPage() {
     results: ["Videos", "HD WallPapers", "News", "Cool Photos", "Nature Songs"]
   })
 
+
   return (
     <div className="container">
         <Logo link={state.logo.link} alt={state.logo.link}/>
@@ -43,7 +44,7 @@ export default function SearchPage() {
               <Button name="I'm Feeling lucky" />
             </div>
           </div>
-          
+
           </div>
 
         </div>
