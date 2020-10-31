@@ -13,7 +13,7 @@ export default function SearchPage() {
       altText: 'logo'
     },
     languages: ["हिन्दी", "বাংলা", "తెలుగు", "मराठी", "தமிழ்", "ગુજરાતી", "ಕನ್ನಡ", "മലയാളം", "ਪੰਜਾਬੀ"],
-    results: ["Videos", "HD WallPapers", "News", "Cool Photos", "Nature Songs"]
+    results: ["Videos", "HD WallPapers", "News", "Cool Photos", "Nature Songs", "when is new movie get released"]
   })
 
 
