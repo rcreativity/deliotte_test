@@ -35,6 +35,7 @@ export default function SearchPage() {
            <Input 
             onFocus={showSearcList} 
             onBlur={hideSearcList} 
+            styles={{border: showSearch && 'none'}}
             />
             <div className="search">
              <FontAwesomeIcon icon={faSearch} />
@@ -44,7 +45,8 @@ export default function SearchPage() {
             </div>
             {showSearch && (
               <div className="search-list-container">
-              <ul className="search-list-group">
+                
+                <ul className="search-list-group">
                 <Li value="TRY SEARCHING FOR" />
                 {
                   state.results.map((value, index)=>{
